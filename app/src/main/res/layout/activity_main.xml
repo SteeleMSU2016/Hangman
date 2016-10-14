@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GameActivity"
+    android:onClick="onStartGame">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/HangmanView"
+        android:layout_above="@+id/KeyboardView"
+        android:src="@drawable/hm0"
+        android:layout_alignLeft="@+id/KeyboardView"
+        android:layout_toLeftOf="@+id/StartButton"
+        android:layout_marginTop="25dp"
+        android:contentDescription="@string/hangman" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/new_game"
+        android:id="@+id/StartButton"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="25sp"
+        android:onClick="onStartGame" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/GuessText"
+        android:layout_toRightOf="@+id/HangmanView"
+        android:layout_above="@+id/KeyboardView"
+        android:layout_alignRight="@+id/KeyboardView"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentTop="false"
+        android:text="@string/new_guess" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/KeyboardView"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentLeft="true"
+        android:clickable="false"
+        android:src="@drawable/keyboard"
+        android:contentDescription="@string/keyboard" />
+
+</RelativeLayout>

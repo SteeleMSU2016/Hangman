@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GameActivity">
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/new_game"
+            android:id="@+id/StartButton"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="25sp"
+            android:onClick="onStartGame" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/HangmanView"
+            android:src="@drawable/hm0"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/StartButton"
+            android:layout_margin="25dp"
+            android:contentDescription="@string/hangman" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/GuessText"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="false"
+            android:layout_above="@+id/StartButton"
+            android:layout_alignParentRight="true"
+            android:layout_alignLeft="@+id/StartButton"
+            android:layout_marginBottom="25dp"
+            android:text="@string/new_guess" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/KeyboardView"
+            android:clickable="false"
+            android:src="@drawable/keyboard"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp" />
+    </LinearLayout>
+
+</LinearLayout>

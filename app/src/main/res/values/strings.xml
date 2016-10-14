@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Hangman steele41</string>
+
+
+    <string name="action_settings">Settings</string>
+    <string name="new_game">New Game</string>
+    <string name="new_guess">_ _ _ _ _ _ _</string>
+    <string name="keyboard">keyboard</string>
+    <string name="hangman">hangman</string>
+    <string name="attempt">hangman</string>
+</resources>
